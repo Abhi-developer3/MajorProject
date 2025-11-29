@@ -13,7 +13,13 @@ const PORT = process.env.PORT || 3000;
 await connectDB()
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+    
+  origin: "https://frontend-1jzp.onrender.com/",
+  credentials: true
+
+
+}));
 
 app.get('/', (req, res)=> res.send("Server is live..."))
 app.use('/api/users', userRouter)
