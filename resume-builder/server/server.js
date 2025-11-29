@@ -15,7 +15,7 @@ await connectDB()
 app.use(express.json())
 app.use(cors({
     
-  origin: "https://frontend-1jzp.onrender.com/",
+  origin: "https://frontend-1jzp.onrender.com",
   credentials: true
 
 
